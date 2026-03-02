@@ -77,7 +77,7 @@ class AuthorizationHeaderBuilder
      *   The message digest to use when signing requests. Defaults to
      *   \Acquia\Hmac\Digest\Digest.
      */
-    public function __construct(RequestInterface $request, KeyInterface $key, DigestInterface $digest = null)
+    public function __construct(RequestInterface $request, KeyInterface $key, ?DigestInterface $digest = null)
     {
         $this->request = $request;
         $this->key     = $key;
