@@ -40,7 +40,7 @@ class ResponseSigner implements ResponseSignerInterface
      *   The digest with which to sign the response. Defaults to
      *   \Acquia\Hmac\Digest\Digest.
      */
-    public function __construct(KeyInterface $key, RequestInterface $request, DigestInterface $digest = null)
+    public function __construct(KeyInterface $key, RequestInterface $request, ?DigestInterface $digest = null)
     {
         $this->key = $key;
         $this->request = $request;
